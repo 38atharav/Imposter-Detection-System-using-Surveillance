@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Suspicious Activity Detection</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Welcome, {{ current_user.id }}!</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Test Video</h5>
+                        <p class="card-text">Upload a video to test for suspicious activity.</p>
+                        <a href="/upload" class="btn btn-primary">Go to Upload</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-Time Surveillance</h5>
+                        <p class="card-text">Monitor real-time surveillance feed.</p>
+                        <a href="/realtime" class="btn btn-success">Go to Surveillance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">View Past Alerts</h5>
+                        <p class="card-text">View a list of past suspicious activity alerts.</p>
+                        <a href="/alerts" class="btn btn-warning">View Alerts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
